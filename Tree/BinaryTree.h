@@ -492,9 +492,8 @@ void BinaryTree<Anytype>::ReleaseBinaryTree(BinaryNode<Anytype>* TheBinaryNode)
 void RunBinaryTree()
 {
 	cout << "Would you kindly build your binary tree by preorder?" << endl;
-	BinaryTree<char> MyBinaryTree;
-	bool flag = true;
-	while (flag)
+	BinaryTree<char> MyBinaryTree;	
+	while (true)
 	{
 		cout << endl << "Menu" << endl;
 		cout << "1.PreOrder" << endl;
@@ -565,8 +564,7 @@ void RunBinaryTree()
 			MyBinaryTree.printBinaryTree();
 			break;
 		default:
-			flag = false;
-			break;
+			return;
 		}
 	}
 }

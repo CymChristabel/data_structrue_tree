@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 #include"BinaryTree.h"
 int main()
 {
